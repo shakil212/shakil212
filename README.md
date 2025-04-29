@@ -4,7 +4,8 @@
 - 💞️ I’m looking to collaborate on open-source projects and innovative web applications. 
 - 📫 How to reach me ...- Email: shakilmahmud212121@gmail.com
                         - LinkedIn: https://www.linkedin.com/in/shakil-mahmud212/
-                        - GitHub: https://github.com/shakil212 
+                        - GitHub: https://github.com/shakil212
+                        - Facebook: https://www.facebook.com/shakilmahmud.212
 - 😄 Pronouns: ... He/Him
 - ⚡ Fun fact: ...I love solving complex algorithms and enjoy playing chess in my free time.
 
