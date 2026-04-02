@@ -9,7 +9,8 @@
                         -Instagram: https://www.instagram.com/shakil_735/
 - 😄 Pronouns: ... He/Him
 - ⚡ Fun fact: ...I love solving complex algorithms and enjoy playing chess in my free time.
-Project List:
+
+- 📫Project List:
 - https://shakil212.github.io/eid-salami/
 - https://shakil-portfolio-pi.vercel.app/
 <!---
