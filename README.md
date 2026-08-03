@@ -12,7 +12,7 @@
 
 - 📫Project List:
 - https://shakil212.github.io/eid-salami/
-- https://shakil-portfolio-pi.vercel.app/
+- https://shakilmahmud-portfolio.vercel.app/
 <!---
 shakil212/shakil212 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
