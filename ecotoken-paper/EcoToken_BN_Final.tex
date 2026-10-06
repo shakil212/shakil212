@@ -1,0 +1,348 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{url}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+\end{@IEEEauthorhalign}
+\hfill\mbox{}\par
+\mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\begin{document}
+
+\title{EcoToken-BN: Bangla Tokenization, Energy Allocation Prediction, and Token Reduction Simulation}
+
+\author{
+\IEEEauthorblockN{1\textsuperscript{st} Shakil Mahmud}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering}\\
+\textit{United International University}\\
+Dhaka, Bangladesh\\
+011212121 --- shakilmahmud212121@gmail.com}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Shahinur Jahan Bedhu}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering}\\
+\textit{United International University}\\
+Dhaka, Bangladesh\\
+011213066 --- sbedhu213066@bscse.uiu.ac.bd}
+\linebreakand
+\IEEEauthorblockN{3\textsuperscript{rd} Tuba Hai}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering}\\
+\textit{United International University}\\
+Dhaka, Bangladesh\\
+011213109 --- thai213109@bscse.uiu.ac.bd}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Sadatun Nabi}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering}\\
+\textit{United International University}\\
+Dhaka, Bangladesh\\
+0112231050 --- snabi2231050@bscse.uiu.ac.bd}
+}
+
+\maketitle
+
+\begin{abstract}
+Bangla text can be fragmented into different numbers of subword tokens depending on the tokenizer vocabulary and segmentation strategy. Excessive fragmentation increases sequence length and may increase the computation performed by downstream language models. This paper presents \textit{EcoToken-BN}, a Bangla-focused green-computing framework whose intended objective is to reduce unnecessary tokenization overhead while preserving downstream task quality. The framework combines two components: \textit{EcoMerge-BN}, a token-reduction procedure that identifies frequently fragmented Bangla sequences and proposes vocabulary-level merging or adaptation, and \textit{EcoPredict-BN}, a lightweight regression component for estimating token-related resource requirements. The experimental baseline uses 9,951 nonempty Bangla annotation strings extracted from 119 JSON files and compares \texttt{csebuetnlp/banglabert} with \texttt{sagorsarker/bangla-bert-base}, yielding 19,902 tokenizer--text observations. Their mean token counts are 1.137675 and 1.606271, while mean encoding latencies are 0.323850 ms and 0.289793 ms. In the recorded CPU-only Google Colab run, CodeCarbon reports CPU-plus-GPU batch-energy estimates of $1.752\times10^{-5}$ kWh and $1.569\times10^{-5}$ kWh. EcoPredict-BN evaluates Linear Regression, Random Forest, and XGBoost on token-proportional energy allocations, producing displayed test $R^2$ values of 0.9606, 1.0000, and 0.9997. EcoMerge-BN further simulates reduced excess-token counts, changing rounded mean counts from 1.61 to 1.42 for Bangla BERT Base and from 1.14 to 1.11 for BanglaBERT. These measurements establish a baseline and a simulation, not yet a verified end-to-end energy saving. Final validation therefore requires an implemented adapted tokenizer, repeated downstream inference measurements, and a quality-preservation constraint so that lower token count and energy are accepted only when accuracy or task quality remains within a predefined tolerance.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Bangla NLP, green computing, tokenization, subword fragmentation, EcoMerge-BN, EcoPredict-BN, energy efficiency, token reduction
+\end{IEEEkeywords}
+
+\section{Introduction}
+Subword tokenization is a necessary preprocessing stage for most Transformer-based language models. The same semantic content may be represented by different sequence lengths when different tokenizer vocabularies are used. Prior work has shown substantial cross-language variation in token counts, pricing, latency, and usable context length \cite{ahia2023,petrov2023}. Controlled comparisons have also shown that tokenizer choice can affect downstream model behavior \cite{rust2021}. These observations are important for Bangla because unnecessary fragmentation may force a model to process more tokens than are needed for equivalent linguistic content.
+
+The green-computing question is broader than merely asking which tokenizer generates fewer tokens. Efficient NLP should consider token count, latency, memory, energy, carbon, and predictive utility together \cite{schwartz2020,henderson2020,strubell2019}. A lower token count at the tokenizer stage does not automatically guarantee lower tokenizer execution energy because software implementation, tensor construction, Python overhead, and hardware state can dominate short preprocessing workloads.
+
+The intended goal of EcoToken-BN is to reduce recurring Bangla fragmentation so that a downstream model can process fewer tokens, use less computation, and consume less energy, while preserving task quality. EcoMerge-BN targets fragmentation directly, while EcoPredict-BN models resource-related quantities and can later support configuration selection.
+
+The study addresses five questions:
+\begin{itemize}
+\item \textbf{RQ1:} How differently do two Bangla tokenizers represent the same annotation corpus?
+\item \textbf{RQ2:} Does a lower token count automatically coincide with lower tokenizer latency and tracker-estimated energy?
+\item \textbf{RQ3:} Can lightweight regressors reproduce the current token-proportional energy allocation?
+\item \textbf{RQ4:} How can EcoMerge-BN systematically reduce recurring fragmentation?
+\item \textbf{RQ5:} What validation is required to prove fewer tokens, lower downstream latency/energy, and preserved accuracy?
+\end{itemize}
+
+The present paper separates measured evidence from proposed optimization. The medium-sized experiment supplies the baseline results, while the proposed method defines the procedure needed to complete the original research target without inventing unmeasured accuracy or energy values.
+
+\section{Background and Related Work}
+\subsection{Subword Tokenization and Language Fairness}
+Byte-Pair Encoding (BPE) and related subword approaches reduce out-of-vocabulary problems by learning reusable units \cite{sennrich2016}. SentencePiece provides a language-independent framework that can learn subword vocabularies directly from raw text \cite{kudo2018}. Their compression quality can nevertheless vary across languages.
+
+Ahia \textit{et al.} connected language-dependent tokenization with unequal cost and utility in commercial language models \cite{ahia2023}. Petrov \textit{et al.} showed that multilingual tokenizers may encode equivalent text with substantially different sequence lengths \cite{petrov2023}. Rust \textit{et al.} linked tokenizer design to downstream performance \cite{rust2021}. Foroutan \textit{et al.} proposed Parity-Aware BPE, explicitly optimizing cross-lingual compression fairness while reporting negligible systematic downstream degradation \cite{foroutan2026}. These studies motivate a Bangla optimization that treats compression and quality jointly.
+
+\subsection{Green AI and Energy Accounting}
+Green AI argues that computational efficiency should be evaluated alongside predictive performance \cite{schwartz2020}. Strubell \textit{et al.} highlighted the financial and environmental cost of deep NLP \cite{strubell2019}, while Henderson \textit{et al.} emphasized transparent reporting of energy and carbon boundaries \cite{henderson2020}. In this study CodeCarbon values are treated as software tracker estimates within the recorded runtime, not as independently metered per-string energy \cite{codecarbon}.
+
+\subsection{Bangla NLP Resources}
+BanglaBERT provides a pretrained Bangla language model and benchmark resources \cite{bhattacharjee2022}. Future quality-preservation experiments can use SentiGOLD for classification \cite{islam2023} and BEnQA or BanglaQuAD for question answering \cite{shafayat2024,rony2024}. These datasets are proposed for future validation and are not mixed into the current medium-dataset results.
+
+\section{Dataset and Experimental Scope}
+\subsection{Annotation Extraction}
+The recorded notebook reads JSON annotation files from \texttt{/content/drive/MyDrive/Dataset/Labels}. The saved execution reports \textbf{119 JSON files} and \textbf{9,951 nonempty annotation strings}. Text is obtained primarily from a LabelMe-style \texttt{shapes} structure using fields such as \texttt{label}, \texttt{text}, \texttt{transcription}, and \texttt{value}. Leading and trailing whitespace are stripped.
+
+Each record includes the source basename, annotation position, raw text, Python string length, and whitespace-based word count. The samples can include words, punctuation, and symbols, so the analysis uses the term \textit{annotation string}. No additional Unicode normalization, spelling correction, deduplication, or punctuation filtering is applied in the saved experiment.
+
+The same 9,951 strings are processed with both tokenizers, giving
+\begin{equation}
+9,951\times2=19,902
+\end{equation}
+tokenizer--text observations. The doubled row count represents two measurements per source string rather than 19,902 unique annotations.
+
+\subsection{Tokenizers and Runtime}
+The two tokenizer sources are \texttt{csebuetnlp/banglabert} and \texttt{sagorsarker/bangla-bert-base}. The recorded experiment benchmarks tokenizer processing only; no pretrained language model is fine-tuned, no model forward pass is executed, and no autoregressive generation is performed.
+
+\begin{table}[htbp]
+\caption{Recorded Experimental Configuration}
+\label{tab:config}
+\centering
+\scriptsize
+\begin{tabular}{p{0.34\columnwidth} p{0.58\columnwidth}}
+\toprule
+\textbf{Item} & \textbf{Recorded value}\\
+\midrule
+Source corpus & 119 JSON files; 9,951 strings\\
+Tokenizer A & \texttt{csebuetnlp/banglabert}\\
+Tokenizer B & \texttt{sagorsarker/bangla-bert-base}\\
+Platform & Google Colab; Linux x86\_64\\
+CPU & Intel Xeon @ 2.20 GHz; 2 threads\\
+Available RAM & 12.671 GB\\
+GPU & None detected\\
+Tracker interval & 1.0 s requested\\
+Benchmark order & A followed by B; one run each\\
+Regression split & 80\% train / 20\% test; seed 42\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Proposed EcoToken-BN Framework}
+The intended workflow is
+\begin{equation}
+\text{Measure}\rightarrow\text{Reduce}\rightarrow\text{Validate}.
+\end{equation}
+The first stage measures fragmentation and resource behavior. The second stage applies EcoMerge-BN. The third stage compares the adapted tokenizer/model with the original configuration and rejects any optimization that causes unacceptable quality loss.
+
+\subsection{EcoMerge-BN Fragmentation Identification}
+For input $x_i$ and tokenizer $m$, let
+\begin{equation}
+t_{im}=\left|\operatorname{tokenize}_m(x_i)\right|
+\end{equation}
+and let $w_i$ be the whitespace-based word count. Fertility is
+\begin{equation}
+f_{im}=\begin{cases}t_{im}/w_i,&w_i>0,\\0,&w_i=0.\end{cases}
+\end{equation}
+EcoMerge-BN collects recurrent words, affixes, or character sequences that repeatedly yield multiple subword pieces. For each candidate it records frequency, corpus coverage, excess tokens, and usage contexts.
+
+\subsection{Candidate Ranking}
+Not every frequent sequence should become a new token. A candidate score can be written as
+\begin{equation}
+S(c)=\alpha F(c)+\beta C(c)+\gamma R(c)-\delta Q(c),
+\label{eq:score}
+\end{equation}
+where $F(c)$ is frequency, $C(c)$ is corpus coverage, $R(c)$ is expected token reduction, and $Q(c)$ is estimated quality or compatibility risk. The coefficients should be tuned on development data rather than inferred from the current annotation-only experiment.
+
+\subsection{Vocabulary Adaptation and Embedding Compatibility}
+Where model compatibility permits, high-ranked candidates can be added to or merged within the tokenizer vocabulary. If a new token replaces constituent tokens with embeddings $e_1,\ldots,e_k$, one possible initialization is
+\begin{equation}
+e_{\mathrm{new}}=\frac{1}{k}\sum_{j=1}^{k}e_j.
+\label{eq:embedding}
+\end{equation}
+A controlled adaptation or fine-tuning stage may then be required so the model can use the new representation without quality degradation.
+
+\subsection{Quality-Constrained Optimization Objective}
+The intended target is not token minimization alone. Let $T$, $L$, and $E$ denote token count, latency, and energy, and let $Q$ denote downstream quality. An adapted configuration should satisfy
+\begin{align}
+T_{\mathrm{eco}}&<T_{\mathrm{base}},\\
+L_{\mathrm{eco}}&<L_{\mathrm{base}},\\
+E_{\mathrm{eco}}&<E_{\mathrm{base}},
+\end{align}
+while
+\begin{equation}
+Q_{\mathrm{eco}}\geq Q_{\mathrm{base}}-\epsilon,
+\label{eq:quality}
+\end{equation}
+where $\epsilon$ is the maximum acceptable task-quality loss. Depending on the task, $Q$ may be Accuracy, macro-F1, Exact Match, or ROUGE.
+
+\subsection{EcoPredict-BN}
+EcoPredict-BN complements EcoMerge-BN by modeling resource-related quantities from features such as character count, word count, token count, fertility, tokenizer identity, model identity, quantization level, and estimated output length. The current baseline uses
+\begin{equation}
+z_{im}=(c_i,w_i,t_{im},f_{im},m).
+\end{equation}
+Future versions should train on independently measured inference blocks and include hardware and model features.
+
+\section{Baseline Measurement Method}
+\subsection{Tokenization and Latency}
+Token count is obtained from the tokenizer's \texttt{tokenize} method. A separate encoding call creates PyTorch tensors and is timed with a high-resolution performance counter. The two operations are related but not identical because the encoding call may add special tokens.
+
+\subsection{Batch Energy and Allocation}
+A separate CodeCarbon tracker is created for each tokenizer. The exported quantity used in the notebook is
+\begin{equation}
+E_m=E_{\mathrm{CPU},m}+E_{\mathrm{GPU},m}.
+\end{equation}
+No GPU is detected in the saved runtime. The batch energy is allocated by token share:
+\begin{equation}
+e_{bim}=E_m\frac{t_{im}}{\sum_jt_{jm}}.
+\label{eq:allocation}
+\end{equation}
+Thus $e_{bim}$ is an allocated per-entry quantity, not an independently metered item-level measurement.
+
+\subsection{Current EcoPredict-BN Regression}
+The current target is $y_{im}=10^6e_{bim}$ in $\mu$kWh. An 80/20 random split with seed 42 produces 15,921 training rows and 3,981 test rows. The evaluated models are Linear Regression, Random Forest with 100 estimators, and XGBoost with 100 estimators and learning rate 0.1 \cite{chen2016}.
+
+\section{Results}
+\subsection{Tokenizer Benchmark}
+\begin{table*}[t]
+\caption{Saved EcoToken-BN Benchmark Results}
+\label{tab:benchmark}
+\centering
+\scriptsize
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{BanglaBERT} & \textbf{Bangla BERT Base}\\
+\midrule
+Annotation strings & 9,951 & 9,951\\
+Mean whitespace-word count & 1.0 & 1.0\\
+Mean token count / fertility & 1.137675 & 1.606271\\
+Mean encoding latency (ms) & 0.323850 & 0.289793\\
+Printed batch duration (s) & 8.14 & 7.24\\
+CPU + GPU batch-energy estimate (kWh) & $1.752\times10^{-5}$ & $1.569\times10^{-5}$\\
+Tracker batch-carbon estimate (kg CO$_2$e) & $2.908\times10^{-5}$ & $2.606\times10^{-5}$\\
+Mean allocated energy (kWh/entry) & $1.760180\times10^{-9}$ & $1.576742\times10^{-9}$\\
+Mean allocated carbon (kg CO$_2$e/entry) & $2.922148\times10^{-9}$ & $2.618796\times10^{-9}$\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+BanglaBERT uses approximately 29.17\% fewer tokens than Bangla BERT Base based on the displayed means. However, it has higher mean encoding latency and a higher tracker-estimated batch energy in this tokenizer-only run. Therefore
+\begin{equation}
+\text{token compression}\neq\text{tokenizer runtime efficiency}.
+\end{equation}
+This does not invalidate the EcoMerge-BN objective because that objective concerns the number of tokens processed by a downstream language model, a stage not executed in the current experiment.
+
+\subsection{EcoPredict-BN Results}
+\begin{table}[htbp]
+\caption{Current EcoPredict-BN Results}
+\label{tab:predict}
+\centering
+\scriptsize
+\begin{tabular}{lcc}
+\toprule
+\textbf{Regressor} & \textbf{Test $R^2$} & \textbf{MAE}\\
+\midrule
+Linear Regression & 0.9606 & Not reported\\
+Random Forest & 1.0000 & Not reported\\
+XGBoost & 0.9997 & Not reported\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The high scores require careful interpretation. Within tokenizer $m$, the target satisfies
+\begin{equation}
+y_{im}=\alpha_m t_{im},\qquad \alpha_m=\frac{10^6E_m}{\sum_jt_{jm}}.
+\end{equation}
+Token count and tokenizer identity are also predictors. The near-unity tree-model scores therefore show recovery of the constructed allocation rule, not near-perfect prediction of independently measured hardware energy.
+
+\subsection{EcoMerge-BN Preliminary Simulation}
+The existing notebook applies a count-based reduction rule with $r=0.30$ to excess tokens and proportionally rescales allocated energy.
+\begin{table}[htbp]
+\caption{EcoMerge-BN Preliminary Simulation}
+\label{tab:merge}
+\centering
+\scriptsize
+\begin{tabular}{lcc}
+\toprule
+\textbf{Quantity} & \textbf{BERT Base} & \textbf{BanglaBERT}\\
+\midrule
+Baseline mean tokens & 1.61 & 1.14\\
+Simulated mean tokens & 1.42 & 1.11\\
+Baseline energy ($\mu$kWh/entry) & 0.00158 & 0.00176\\
+Simulated energy ($\mu$kWh/entry) & 0.00139 & 0.00172\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The larger simulated reduction for Bangla BERT Base is consistent with its higher starting fragmentation. The energy decrease is imposed by proportional scaling and is not a second CodeCarbon measurement after a real tokenizer modification. It is therefore treated as a feasibility simulation.
+
+\section{Validation Plan for the Intended Final Model}
+The original EcoToken-BN target can be verified only through a controlled before--after comparison of the original tokenizer/model and an implemented EcoMerge-BN tokenizer/model.
+
+\subsection{Controlled Comparison}
+The evaluation should keep the same samples, source-document split, model architecture, hardware, numerical precision, batch size, software versions, warm-up policy, and decoding settings. The experiment should use repeated randomized runs.
+
+\begin{table}[htbp]
+\caption{Required Final Validation Metrics}
+\label{tab:finalmetrics}
+\centering
+\scriptsize
+\begin{tabular}{p{0.38\columnwidth} p{0.50\columnwidth}}
+\toprule
+\textbf{Dimension} & \textbf{Metric}\\
+\midrule
+Tokenization & token count, fertility, fragmentation rate\\
+Runtime & inference latency, throughput\\
+Resources & memory use, measured energy\\
+Environment & estimated CO$_2$e with stated grid factor\\
+Task quality & Accuracy/F1, Exact Match, or ROUGE\\
+Efficiency & energy per correct prediction/useful output\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For classification, SentiGOLD \cite{islam2023} is suitable for future quality testing. For question answering, BEnQA \cite{shafayat2024} and BanglaQuAD \cite{rony2024} are relevant. These are proposed validation resources and are not mixed into the current medium-dataset results.
+
+An EcoMerge-BN configuration should be accepted only if
+\begin{equation}
+\Delta T<0,\quad \Delta E<0,\quad \Delta L<0,
+\end{equation}
+and
+\begin{equation}
+\Delta Q\geq-\epsilon.
+\end{equation}
+This prevents an apparent green optimization that saves resources only by damaging NLP quality.
+
+\section{Discussion}
+The current evidence supports three concrete conclusions. First, the two Bangla tokenizers represent the same 9,951 strings with substantially different average token counts. Second, fewer output tokens do not correspond to lower tokenizer-only latency or tracker energy in this saved run. Third, the count-reduction simulation motivates a real vocabulary-adaptation experiment.
+
+The current results do not prove that a deployed EcoMerge-BN model already saves energy without quality loss. No adapted vocabulary, modified embedding matrix, downstream model inference, or post-adaptation accuracy/F1 evaluation is contained in the supplied experiment. The proposed method and validation protocol are included specifically to complete that original research objective in a scientifically testable way.
+
+Only one short corpus loop is recorded per tokenizer, in a fixed order. There is no explicit warm-up, randomized order, repeated-run confidence interval, idle-power subtraction, or background-load control. The 9,951 source items are short annotation strings rather than complete downstream NLP tasks, and the EcoPredict-BN split is random by row rather than grouped by source document.
+
+\section{Conclusion}
+EcoToken-BN is designed to answer a practical green-computing question: can Bangla text be represented with fewer unnecessary tokens so that downstream models perform less computation while retaining useful NLP quality? The current experiment provides the baseline needed to pursue that objective. It processes 9,951 annotation strings from 119 JSON files with two Bangla tokenizer configurations. BanglaBERT generates fewer tokens, whereas Bangla BERT Base records lower tokenizer-only latency and lower tracker-estimated batch energy in the saved run. This shows why token count, tokenizer runtime, and downstream model cost must be measured separately.
+
+EcoPredict-BN provides an initial prediction component, although its near-unity tree-model $R^2$ values mainly reflect recovery of a token-proportional allocation formula. EcoMerge-BN provides a preliminary simulation and a proposed path toward a real adaptation: identify recurring fragments, rank safe candidates, adapt vocabulary and embeddings, and accept the new configuration only when repeated inference measurements show lower tokens, latency, and energy while task quality remains within a predefined tolerance.
+
+The paper therefore combines measured baseline evidence, transparent simulation results, and a quality-constrained optimization procedure. The next experimental stage is implementation of the vocabulary adaptation and controlled before--after task evaluation.
+
+\section*{Data and Code Availability}
+The supplied project materials include the experimental notebook, saved aggregate results, manuscript resources, and medium-dataset extraction counts. Full reproduction additionally requires the original 119 JSON annotation files, generated CSV outputs, exact tokenizer revisions, and software dependencies of the recorded Colab environment. No independently metered per-entry power trace or fully deployed EcoMerge-BN tokenizer is claimed in the current study.
+
+\begin{thebibliography}{00}
+\bibitem{ahia2023} O. Ahia, S. Kumar, H. Gonen, J. Kasai, D. Mortensen, N. A. Smith, and Y. Tsvetkov, ``Do all languages cost the same? Tokenization in the era of commercial language models,'' in \textit{Proc. EMNLP}, 2023, pp. 9904--9923.
+\bibitem{rust2021} P. Rust, J. Pfeiffer, I. Vulic, S. Ruder, and I. Gurevych, ``How good is your tokenizer? On the monolingual performance of multilingual language models,'' in \textit{Proc. ACL-IJCNLP}, 2021, pp. 3118--3135.
+\bibitem{petrov2023} A. Petrov, E. La Malfa, P. H. S. Torr, and A. Bibi, ``Language model tokenizers introduce unfairness between languages,'' in \textit{Advances in Neural Information Processing Systems}, vol. 36, 2023.
+\bibitem{foroutan2026} N. Foroutan, C. Meister, D. Paul, J. Niklaus, S. Ahmadi, A. Bosselut, and R. Sennrich, ``Parity-Aware Byte-Pair Encoding: Improving cross-lingual fairness in tokenization,'' in \textit{Proc. ACL}, 2026, pp. 7514--7538.
+\bibitem{schwartz2020} R. Schwartz, J. Dodge, N. A. Smith, and O. Etzioni, ``Green AI,'' \textit{Commun. ACM}, vol. 63, no. 12, pp. 54--63, 2020.
+\bibitem{henderson2020} P. Henderson, J. Hu, J. Romoff, E. Brunskill, D. Jurafsky, and J. Pineau, ``Towards the systematic reporting of the energy and carbon footprints of machine learning,'' \textit{J. Mach. Learn. Res.}, vol. 21, no. 248, pp. 1--43, 2020.
+\bibitem{strubell2019} E. Strubell, A. Ganesh, and A. McCallum, ``Energy and policy considerations for deep learning in NLP,'' in \textit{Proc. ACL}, 2019, pp. 3645--3650.
+\bibitem{sennrich2016} R. Sennrich, B. Haddow, and A. Birch, ``Neural machine translation of rare words with subword units,'' in \textit{Proc. ACL}, 2016, pp. 1715--1725.
+\bibitem{kudo2018} T. Kudo and J. Richardson, ``SentencePiece: A simple and language independent subword tokenizer and detokenizer for neural text processing,'' in \textit{Proc. EMNLP: System Demonstrations}, 2018, pp. 66--71.
+\bibitem{bhattacharjee2022} A. Bhattacharjee, T. Hasan, W. Ahmad, K. S. Mubasshir, M. S. Islam, A. Iqbal, M. S. Rahman, and R. Shahriyar, ``BanglaBERT: Language model pretraining and benchmarks for low-resource language understanding evaluation in Bangla,'' in \textit{Findings of NAACL}, 2022, pp. 1318--1327.
+\bibitem{shafayat2024} S. Shafayat, H. M. Q. Hasan, M. R. C. Mahim, R. A. Putri, J. Thorne, and A. Oh, ``BEnQA: A question answering benchmark for Bengali and English,'' in \textit{Findings of ACL}, 2024, pp. 1158--1177.
+\bibitem{rony2024} M. R. A. H. Rony, S. K. Shaha, R. Al Hasan, S. K. Dey, A. H. Rafi, A. H. Sirajee, and J. Lehmann, ``BanglaQuAD: A Bengali open-domain question answering dataset,'' arXiv:2410.10229, 2024.
+\bibitem{islam2023} M. E. Islam, L. Chowdhury, F. A. Khan, S. Hossain, S. Hossain, M. M. O. Rashid, N. Mohammed, and M. R. Amin, ``SentiGOLD: A large Bangla gold standard multi-domain sentiment analysis dataset and its evaluation,'' arXiv:2306.06147, 2023.
+\bibitem{chen2016} T. Chen and C. Guestrin, ``XGBoost: A scalable tree boosting system,'' in \textit{Proc. ACM SIGKDD}, 2016, pp. 785--794.
+\bibitem{codecarbon} CodeCarbon Contributors, ``Methodology and power estimation,'' \textit{CodeCarbon Documentation}, accessed Sep. 21, 2026.
+\end{thebibliography}
+
+\end{document}
