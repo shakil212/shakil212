@@ -1,476 +1,355 @@
+
+<!-- SHAKIL MAHMUD — ULTRA PREMIUM V3 / AURORA EDITION -->
+
 <div align="center">
 
-# Hi, I’m Shakil Mahmud 👋
+<!-- CINEMATIC ANIMATED HERO -->
 
-### Software Developer | AI & Machine Learning Enthusiast | Undergraduate Researcher
+<img width="100%" alt="Shakil Mahmud — AI Research and Software Engineering" src="https://capsule-render.vercel.app/api?type=venom&height=300&color=0:050B1D,28:102B54,65:134A7C,100:4E267B&text=SHAKIL%20MAHMUD&fontColor=F4FBFF&fontSize=60&fontAlignY=43&stroke=5DEDF6&strokeWidth=1&desc=AI%20RESEARCH%20%7C%20SOFTWARE%20ENGINEERING%20%7C%20INTELLIGENT%20SYSTEMS&descSize=15&descAlignY=73&animation=twinkling" />
+
+<a href="https://github.com/shakil212">
+<img alt="Animated professional introduction" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3100&pause=1050&color=60E7FF&center=true&vCenter=true&width=780&height=64&lines=AI+%26+Machine+Learning+Research;Full-Stack+Software+Engineering;Self-Supervised+Learning+%26+IoT+Security;Sustainable+Bangla+NLP;Turning+Research+Into+Useful+Software" />
+</a>
+
+**Computer Science Undergraduate · AI/ML Researcher · Software Developer**
+
+*Curiosity in research. Precision in engineering. Integrity in evaluation.*
 
 <p>
-  <a href="mailto:shakilmahmud212121@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://www.linkedin.com/in/shakil-mahmud212/">
-    <img src="https://img.shields.io/badge/LinkedIn-Shakil_Mahmud-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://github.com/shakil212">
-    <img src="https://img.shields.io/badge/GitHub-shakil212-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  <a href="https://shakilmahmud-portfolio.vercel.app/">
-    <img src="https://img.shields.io/badge/Portfolio-Visit_Website-FF5722?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+<a href="https://github.com/shakil212"><img alt="GitHub" src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/shakil-mahmud212/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-1265A8?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://shakilmahmud-portfolio.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="mailto:shakilmahmud212121@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-087F96?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
+
+![Location](https://img.shields.io/badge/BASED%20IN-DHAKA%2C%20BANGLADESH-183252?style=flat-square&labelColor=0C1429)
+![University](https://img.shields.io/badge/EDUCATION-UNITED%20INTERNATIONAL%20UNIVERSITY-302A67?style=flat-square&labelColor=0C1429)
+
+**[ABOUT](#-the-person-behind-the-projects) · [RESEARCH](#-research-laboratory) · [PROJECTS](#-selected-projects) · [SKILLS](#-technical-universe) · [ACTIVITY](#-github-activity) · [CONTACT](#-lets-connect)**
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## ✦ The Person Behind the Projects
 
-I am a **Computer Science undergraduate at United International University** with strong interests in **artificial intelligence, machine learning, software development, and research**.
+I'm **Shakil Mahmud**, a **BSc Computer Science undergraduate at United International University**, focused on building intelligent software and studying how machine learning systems behave beyond ideal benchmark settings.
 
-I enjoy building practical software systems and exploring how intelligent technologies can solve meaningful real-world problems. My current work includes continual learning, sustainable Bangla language models, adaptive STEM tutoring, AI-powered web platforms, automation systems, and AI- and IoT-based applications.
+My work spans **self-supervised IoT security**, **Bangla language technology**, **full-stack applications**, and **research-oriented interfaces**.
 
-My goal is to combine **software engineering, artificial intelligence, and machine learning** to develop intelligent, practical, and impactful solutions for meaningful real-world problems.
+I value systems that are not only visually compelling, but also technically sound, transparent about their limitations, and useful in practice.
 
-* 🎓 Pursuing a **BSc in Computer Science** at United International University
-* 📍 Based in **Dhaka, Bangladesh**
-* 🤖 Working with **AI, machine learning, large language models, and intelligent systems**
-* 💻 Building software using **Python, Java, JavaScript, TypeScript, React.js, and Next.js**
-* 🔬 Conducting research in **continual learning, sustainable AI, and adaptive AI tutoring**
-* 🌱 Continuously learning advanced web development, AI/ML, data science, and cloud technologies
-* 🤝 Open to research collaboration, open-source contributions, and innovative software projects
-* ♟️ Interested in algorithmic problem-solving and chess
+| 🔭 Now Exploring | 🛠️ Now Building | 🌱 Long-Term Direction |
+|:---|:---|:---|
+| Temporal SSL, robust evaluation, sustainable NLP | CareerPath AI, IoT research UI, developer tools | Adaptive, efficient, human-centered intelligent systems |
+
+<div align="center">
+
+**RESEARCH** ✦ **BUILD** ✦ **MEASURE** ✦ **IMPROVE**
+
+</div>
 
 ---
 
-## 🔬 Ongoing Research
+## ✦ Research Laboratory
 
-### 1. Memory-Efficient Task-Free Continual Learning
+<div align="center">
+
+<img width="100%" alt="Research Laboratory" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:163B6A,100:402466&text=RESEARCH%20LABORATORY&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
+
+**Machine Learning · Cybersecurity · Efficient NLP · Continual Learning · Educational AI**
+
+</div>
+
+### 01 / MOT-SSL-GRU — Beyond Known IoT Attacks
+
+**Temporal Self-Supervised Representation Learning for Zero-Day IoT Intrusion Detection Using GRU Networks**
+
+![IoT Security](https://img.shields.io/badge/DOMAIN-IoT%20Security-087B9A?style=flat-square)
+![Temporal SSL](https://img.shields.io/badge/METHOD-Temporal%20SSL%20%2B%20GRU-5740A7?style=flat-square)
+![Status](https://img.shields.io/badge/STATUS-Audited%20University%20Manuscript-167E73?style=flat-square)
+
+An audited study of **contrastive representation learning**, **temporal-order supervision**, and **GRU encoders** for family-holdout IoT attack detection.
+
+The evaluation uses CICIoT2023-derived experiments and compares **nine models**, including classical, supervised, and self-supervised baselines.
+
+| Primary Comparison | Proposed Model Result |
+|:---|---:|
+| Held-out attack families | 6 |
+| Random seeds per family | 5 |
+| Total comparable model-run rows | 270 |
+| Mean held-out-family recall | **97.31%** |
+| Mean F1 | **89.69%** |
+| Mean false-positive rate | **40.79%** |
+
+**Research interpretation:** Strong attack recall was accompanied by a substantial benign false-positive burden.
+
+Paired tests **did not establish a statistically significant advantage** over Reference SSL-GRU. The result-analysis package is audited, but full primary training provenance and deployment readiness are not established.
+
+<p>
+<a href="https://github.com/shakil212/MOT-SSL-GRU-ZeroDay-IoT"><img alt="Research Repository" src="https://img.shields.io/badge/RESEARCH%20REPOSITORY-144E83?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/shakil212/MOT-SSL-GRU-ZeroDay-IoT-Cinematic-UI"><img alt="Cinematic Dashboard" src="https://img.shields.io/badge/CINEMATIC%20DASHBOARD-6545A5?style=for-the-badge&logo=streamlit&logoColor=white" /></a>
+</p>
+
+<details>
+<summary><b>Experimental Scope & Scientific Boundaries</b></summary>
+
+- The balanced primary analysis contains **6 families × 5 seeds × 9 models = 270 runs**.
+- A separate supplementary comparison covers **seven families at seed 13**, without inventing unavailable DDoS seeds.
+- RQ4 is **development-validation sensitivity**, not independent held-out-family testing.
+- Complete cross-fold development-selection independence is not established.
+- The linked dashboard is a UI demonstrator; trained-model inference is **not connected**.
+- No publication, autonomous attack blocking, or production deployment is claimed.
+
+</details>
+
+---
+
+### 02 / EcoToken-BN — Sustainable Bangla NLP
+
+**EcoToken-BN: Bangla Tokenization, Energy Allocation Prediction, and Token Reduction Simulation**
+
+![Bangla NLP](https://img.shields.io/badge/DOMAIN-Bangla%20NLP-087B9A?style=flat-square)
+![Green AI](https://img.shields.io/badge/FOCUS-Green%20AI-27806B?style=flat-square)
+![Draft](https://img.shields.io/badge/STATUS-Evidence--Bounded%20Draft-7052B3?style=flat-square)
+
+An evidence-bounded manuscript analyzing how two Bangla tokenizers segment text, how regression models recover a **formula-constructed energy-allocation target**, and what evidence would be needed to validate token-reduction claims.
+
+**Research highlights:**
+
+- The notebooks extract **34,387 nonempty annotation strings** from **500 JSON files**.
+- A separate tracker summary compares **9,951 strings per tokenizer**.
+- Regression results concern a constructed energy-allocation proxy, not independently measured electricity.
+- A reported token-reduction scenario is not yet supported by an executable, verified implementation.
+
+**Stage:** Working research manuscript. Measured energy savings and a validated token-reduction method are **not claimed**.
+
+---
+
+### 03 / Task-Free Continual Learning
 
 **Memory-Efficient Task-Free Continual Learning under Non-Stationary Data Streams**
 
-This research investigates how machine learning models can continuously learn from changing data streams without receiving explicit task labels.
+A **proposed research direction** studying adaptation to shifting data without explicit task boundaries.
 
-The primary objectives are to:
+The research objectives include investigating:
 
-* Reduce catastrophic forgetting
-* Minimize memory requirements
-* Learn from non-stationary data streams
-* Detect and adapt to changing data distributions
-* Develop practical task-free continual learning methods
-* Improve long-term model adaptability
+- Catastrophic forgetting
+- Long-term knowledge retention
+- Memory efficiency
+- Non-stationary learning
+- Distribution-shift adaptation
+- Computational-resource trade-offs
 
----
+`Continual Learning` · `Distribution Shift` · `Memory Efficiency` · `Adaptive Models`
 
-### 2. EcoToken-BN
-
-**Quantifying and Mitigating the Tokenization, Energy, Cost, and Carbon Tax of Bangla Language Models**
-
-EcoToken-BN investigates how tokenization inefficiencies affect the performance, cost, energy consumption, and environmental impact of Bangla language models.
-
-The research focuses on:
-
-* Measuring Bangla tokenization overhead
-* Analyzing inference and processing costs
-* Estimating computational energy consumption
-* Examining carbon emissions
-* Comparing tokenizer efficiency across language models
-* Developing practical mitigation strategies
-* Supporting sustainable and affordable Bangla language technologies
+**Stage:** Research problem formulation and proposed objectives. Completed experiments are not claimed.
 
 ---
 
-### 3. Cognitive State-Driven Generative Scaffolding
+### 04 / Cognitive State-Driven Generative Scaffolding
 
-**Cognitive State-Driven Generative Scaffolding: Aligning Large Language Models with Deep Knowledge Tracing for Adaptive STEM Tutoring**
+**Aligning Large Language Models with Deep Knowledge Tracing for Adaptive STEM Tutoring**
 
-This research explores an adaptive STEM tutoring framework that combines **Large Language Models** with **Deep Knowledge Tracing**.
+A **proposed framework** connecting evolving estimates of learner mastery with LLM-generated hints, explanations, and adaptive educational support.
 
-The proposed framework aims to:
+**Research objectives:**
 
-* Estimate a learner’s current knowledge state
-* Track learning progress over time
-* Identify learning gaps and misconceptions
-* Generate personalized hints and explanations
-* Adapt instructional difficulty
-* Provide appropriate step-by-step scaffolding
-* Reduce unnecessary assistance and learner dependency
-* Improve student engagement and learning outcomes
+- Model learner knowledge states
+- Identify conceptual gaps
+- Generate personalized explanations
+- Adapt instructional hints
+- Investigate learner-aware scaffolding
+- Support intelligent STEM education
 
-The primary goal is to enable an LLM-based tutoring system to generate educational support according to each learner’s continuously updated cognitive and knowledge state.
+`Large Language Models` · `Deep Knowledge Tracing` · `Adaptive STEM Education`
 
----
+**Stage:** Conceptual research framework. Learning-outcome improvements are not yet experimentally validated.
 
-## 🎯 Research Interests
-
-* Artificial Intelligence
-* Machine Learning
-* Deep Learning
-* Computer Vision
-* Large Language Models
-* Generative Artificial Intelligence
-* Continual Learning
-* Task-Free Continual Learning
-* Deep Knowledge Tracing
-* Intelligent Tutoring Systems
-* Adaptive STEM Education
-* Educational Data Mining
-* Sustainable and Green AI
-* Low-Resource Language Technologies
-* Human-Centered Artificial Intelligence
-* AI and IoT Systems
-* Data-Driven Intelligent Systems
+> **Research Integrity:** These entries distinguish an audited university manuscript, an evidence-bounded draft, and proposed research directions. None is presented as an accepted or published paper.
 
 ---
 
-## 🛠️ Technical Skills
+## ✦ Selected Projects
 
-### Programming Languages
+<div align="center">
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-</p>
+<img width="100%" alt="Selected Projects" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:12406C,100:49246A&text=SELECTED%20PROJECTS&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
 
-### Front-End Development
+**From Research Prototypes to Useful Software**
 
-<p>
-  <img src="https://img.shields.io/badge/React.js-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React.js" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-</p>
+</div>
 
-### Artificial Intelligence and Research
+### ◆ CareerPath AI
 
-<p>
-  <img src="https://img.shields.io/badge/Artificial_Intelligence-412991?style=for-the-badge" alt="Artificial Intelligence" />
-  <img src="https://img.shields.io/badge/Machine_Learning-102230?style=for-the-badge" alt="Machine Learning" />
-  <img src="https://img.shields.io/badge/Continual_Learning-6A1B9A?style=for-the-badge" alt="Continual Learning" />
-  <img src="https://img.shields.io/badge/Large_Language_Models-000000?style=for-the-badge" alt="Large Language Models" />
-  <img src="https://img.shields.io/badge/Deep_Knowledge_Tracing-1565C0?style=for-the-badge" alt="Deep Knowledge Tracing" />
-  <img src="https://img.shields.io/badge/Sustainable_AI-2E7D32?style=for-the-badge" alt="Sustainable AI" />
-</p>
+**AI-Powered Career Guidance and Job-Readiness Platform**
 
-### Research and Analytical Skills
+A full-stack application featuring career-planning guidance, skill-gap analysis, resource recommendations, academic advice, and an integrated resume-building experience.
 
-* Literature review
-* Research-gap identification
-* Experiment planning
-* Technical and scientific writing
-* Structured problem analysis
-* Documentation and reporting
-* Workflow and system design
-* Database management
-* Process improvement
+**Technology stack**
 
-### Development Tools and Platforms
+`Django` `Django REST Framework` `Next.js` `TypeScript` `PostgreSQL` `Tailwind CSS` `shadcn/ui` `JWT`
 
-<p>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
-  <img src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white" alt="Eclipse" />
-  <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio" />
-  <img src="https://img.shields.io/badge/Raspberry_Pi-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
-  <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
-</p>
+**Status:** Integrated MVP. Further hardening and deployment work are ongoing. Some job-management features remain planned.
 
-### Office and Productivity
+[**Explore CareerPath AI →**](https://github.com/shakil212/careerpath-ai)
 
-* Microsoft Word and professional document formatting
-* Microsoft PowerPoint presentations
-* Microsoft Excel spreadsheets
-* Basic formulas, charts, and data organization
-* Technical documentation
-* Data entry and structured reporting
+*Repository access may require authorization.*
 
 ---
 
-## 🚀 Selected Projects
+### ◆ MOT-SSL-GRU Cinematic Research UI
 
-### 🤖 CareerPath AI
+**Research Interface for Temporal IoT Intrusion-Detection Experiments**
 
-**AI-Powered Career-Planning Web Platform**
+A Streamlit demonstrator focused on research context, file inspection, submission workflows, provenance, and a cinematic dark UI.
 
-CareerPath AI is a web-based platform designed to support users in exploring career paths and making informed professional-development decisions.
+**Technology stack**
 
-Key features include:
+`Python` `Streamlit` `CSS` `pytest` `Research UI/UX`
 
-* Personalized career guidance
-* User profiles
-* Notifications
-* Community features
-* Job-market insights
-* Reusable user-interface components
-* Structured career-development support
+**Status:** UI demonstration. **Real-time prediction is disabled** because the trained model is not connected.
+
+[**Explore the Cinematic Dashboard →**](https://github.com/shakil212/MOT-SSL-GRU-ZeroDay-IoT-Cinematic-UI)
 
 ---
 
-### 🚨 Project Savior
+### ◆ PHARVO — Smart Pharmacy Platform
 
-**Autonomous Search and Rescue Hazard-Mapping Rover**
+An academic healthcare software-system design covering:
 
-`Raspberry Pi` `Arduino Mega` `AI` `IoT`
+- Medicine inventory management
+- Prescription workflows
+- Point-of-sale operations
+- Procurement and stock control
+- Access control
+- Reporting and analytics
 
-Project Savior is an AI- and IoT-based search-and-rescue rover designed to support operations in hazardous environments.
+**Skills:** `Requirements Engineering` `Software Architecture` `Workflow Modeling`
 
-The system is being developed with:
-
-* Thermal human-presence detection
-* Distress-sound recognition
-* Gas-hazard monitoring
-* Route and hazard visualization
-* Two-way victim communication
-* Obstacle avoidance
-* Fall-hazard avoidance
-* Raspberry Pi and Arduino Mega integration
+**Status:** Academic system design. Production operation is not claimed.
 
 ---
 
-### 💊 PHARVO
+### ◆ Project Savior — Hazard-Mapping Rescue Rover
 
-**Smart Pharmacy Management and Healthcare Platform**
+An AI/IoT-oriented rover development project using **Raspberry Pi** and **Arduino Mega**.
 
-`Software Requirements` `AI` `System Design`
+**Intended capabilities:**
 
-PHARVO is a modular pharmacy-management platform designed to improve operational efficiency and healthcare-service management.
+- Hazard and environmental sensing
+- Thermal human-presence detection
+- Distress-sound recognition
+- Obstacle awareness
+- Rescue communication support
 
-The system covers:
+**Skills:** `Raspberry Pi` `Arduino Mega` `Sensors` `Embedded Systems`
 
-* Point-of-sale operations
-* Medicine inventory management
-* Digital prescriptions
-* Procurement management
-* Analytics and reporting
-* Security controls
-* Role-based workflows
-* Modular healthcare-system design
+**Status:** Development-oriented work. Field validation is not claimed.
 
 ---
 
-### ⚙️ Personal Automation System
+<details>
+<summary><b>✧ More Engineering, Academic & Creative Projects</b></summary>
 
-**Bilingual Cross-Platform Automation Solution**
+| Project | Scope |
+|:---|:---|
+| **Personal Automation System** | Python-based bilingual productivity and workflow automation |
+| **Corporate Training & Skill Evaluation** | Academic employee-training and assessment system design |
+| **iNotify** | Java OOP notification application presented at UIU CSE Project Show |
+| **Digital Wheelchair** | Academic project presented at UIU CSE Project Show |
+| **[Personal Portfolio](https://github.com/shakil212/my-portfolio)** | React, TypeScript, Vite and Tailwind CSS portfolio |
+| **[Eid Salami](https://github.com/shakil212/eid-salami)** | Interactive web-based Eid experience |
+| **[ZeroDay IoT ML](https://github.com/shakil212/ZeroDay-IoT-ML-Project)** | Related notebook work in IoT security research |
 
-`Python` `Automation` `Workflow Management`
-
-This project is a bilingual automation system designed to simplify routine digital tasks and improve personal productivity.
-
-Features include:
-
-* Task scheduling
-* Reminders
-* File organization
-* Notifications
-* Workflow-history management
-* Cross-device control
-* Bilingual interaction
-* Repetitive-task automation
+</details>
 
 ---
 
-### 📊 Corporate Training and Employee Skill Evaluation System
+## ✦ Technical Universe
 
-**Employee Training and Process-Management Platform**
+<div align="center">
 
-This web-based system was designed to support organizational employee development.
+<img width="100%" alt="Technical Universe" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:153D6A,100:432667&text=TECHNICAL%20UNIVERSE&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
 
-Core functions include:
+<img alt="Technical Stack" src="https://skillicons.dev/icons?i=py,java,js,ts,html,css,react,nextjs,tailwind,django,postgres,git,github,vscode&perline=7&theme=dark" />
 
-* Employee skill assessment
-* Training assignment
-* Learning-progress tracking
-* Performance reporting
-* Role-based follow-up
-* Structured employee-development workflows
+</div>
 
----
+| Field | Skills & Tools |
+|:---|:---|
+| **Programming Languages** | Python · Java · JavaScript · TypeScript |
+| **Frontend Development** | React · Next.js · HTML · CSS · Tailwind CSS · Vite · shadcn/ui |
+| **Backend Development** | Django · Django REST Framework · REST APIs |
+| **Databases & Authentication** | PostgreSQL · Database Design · JWT |
+| **AI/ML Research** | Neural Networks · GRU · Self-Supervised Learning · Classification |
+| **Research Methods** | Family-Holdout Evaluation · Statistical Testing · Sensitivity Analysis |
+| **Scientific Tools** | Google Colab · Jupyter · LaTeX · Overleaf |
+| **Software Engineering** | Git · GitHub · VS Code · Streamlit · pytest |
+| **UI/UX** | Human-Computer Interaction · Interface Design · Prototyping |
+| **Embedded Systems** | Raspberry Pi · Arduino · IoT System Design |
 
-### 🔔 iNotify
-
-**Java-Based Notification Application**
-
-`Java` `Object-Oriented Programming`
-
-iNotify is a Java-based notification application developed using object-oriented programming principles.
-
-The project was presented at the **United International University CSE Project Show**.
+**Exploring further:** `Large Language Models` · `Generative AI` · `Continual Learning` · `Deep Knowledge Tracing` · `Sustainable NLP` · `Computer Vision` · `Human-Centered AI`
 
 ---
 
-### 🎁 Eid Salami
+## ✦ Education & Recognition
 
-**Interactive Digital Eid Salami Experience**
-
-A creative web application designed to offer an engaging digital Eid Salami experience.
-
-🔗 **Live Project:** [shakil212.github.io/eid-salami](https://shakil212.github.io/eid-salami/)
-
----
-
-### 🌐 Personal Portfolio
-
-My portfolio presents my development experience, technical skills, academic background, projects, and research interests.
-
-🔗 **Live Portfolio:** [shakilmahmud-portfolio.vercel.app](https://shakilmahmud-portfolio.vercel.app/)
-
----
-
-## 🏆 Achievements and Professional Development
-
-* 🥈 **1st Runner-up** — Object-Oriented Programming Contest
-* 🥈 **1st Runner-up** — Electronics Lab Contest
-* 🤖 Completed the **5-Day AI Agents Intensive Course with Google**
-* 🎓 Presented the **iNotify** project at the CSE Project Show
-* ♿ Presented the **Digital Wheelchair** project at the CSE Project Show
-
----
-
-## 📚 Education
-
-### United International University
+**United International University** · Dhaka, Bangladesh
 
 **Bachelor of Science in Computer Science**
 
-📍 Dhaka, Bangladesh
-📅 September 2021 – May 2027
+Undergraduate · Expected graduation: May 2027
 
-**Relevant Coursework:**
-
-* Artificial Intelligence
-* Database Management
-* Object-Oriented Programming
-* Data Structures
-* Algorithms
+| Recognition | Detail |
+|:---|:---|
+| 🥈 **1st Runner-up** | Object-Oriented Programming Contest |
+| 🥈 **1st Runner-up** | Electronics Lab Contest |
+| 🎓 **Google AI Agents Intensive** | Completed the 5-Day Course |
+| 🛠️ **UIU CSE Project Show** | Presented iNotify and Digital Wheelchair |
 
 ---
 
-## 🌱 Currently Learning
-
-* Advanced React.js and Next.js
-* Node.js and back-end development
-* Python and Django
-* Artificial intelligence and machine learning
-* Deep learning and computer vision
-* Large language models and generative AI
-* Data analysis and data science
-* Database design and management
-* Data structures and algorithms
-* Cloud computing with Google Cloud Platform
-* Research methodology
-* Scientific and technical writing
-
----
-
-## 🤝 Open to Collaboration
-
-I am interested in collaborating on:
-
-* Open-source software projects
-* Full-stack web applications
-* Artificial intelligence and machine learning systems
-* Large language model applications
-* Continual learning research
-* Intelligent tutoring systems
-* Computer vision projects
-* AI- and IoT-based systems
-* Data science and analytics projects
-* Educational technology research
-* Sustainable and Green AI
-* Low-resource language technologies
-* Research-oriented software tools
-* Socially impactful technology projects
-
----
-
-## 💡 Professional Strengths
-
-* Problem-solving
-* Teamwork
-* Adaptability
-* Attention to detail
-* Technical communication
-* Presentation
-* Research documentation
-* Structured planning
-* Continuous learning
-
----
-
-## 🌐 Languages
-
-* **Bangla:** Native
-* **English:** Working proficiency
-
----
-
-## 📊 GitHub Statistics
+## ✦ GitHub Activity
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=shakil212&show_icons=true&hide_border=true&count_private=true" alt="Shakil Mahmud's GitHub Statistics" />
+<img width="100%" alt="GitHub Activity" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:123D69,100:412267&text=GITHUB%20ACTIVITY&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shakil212&layout=compact&hide_border=true" alt="Shakil Mahmud's Most Used Languages" />
+**Projects, Experiments & Engineering in Progress**
+
+<a href="https://github.com/shakil212?tab=repositories">
+<img alt="Explore GitHub Repositories" src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-0B7399?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+
+<a href="https://github.com/shakil212?tab=overview">
+<img alt="View GitHub Contributions" src="https://img.shields.io/badge/VIEW-CONTRIBUTIONS-6544B4?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
 </div>
+
+*The native GitHub contribution view is linked instead of embedding the external activity graph that previously displayed as a broken image.*
+
+---
+
+## ✦ Let's Connect
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=shakil212&hide_border=true" alt="Shakil Mahmud's GitHub Streak" />
+<img width="100%" alt="Let's Connect" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:12406B,100:49226F&text=LET%27S%20CONNECT&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
+
+**Open to Research Collaboration, Internships, Graduate Research & Software Engineering Opportunities**
+
+Let's talk about robust ML, sustainable AI, research tools, educational technology, or building useful software.
+
+<p>
+<a href="mailto:shakilmahmud212121@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-CONTACT%20ME-087F96?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/shakil-mahmud212/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-CONNECT-1265A8?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://shakilmahmud-portfolio.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-EXPLORE-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+</p>
+
+### ASK BETTER QUESTIONS · BUILD USEFUL SYSTEMS · REPORT THE EVIDENCE
+
+<img width="100%" alt="Animated Aurora Footer" src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:050B1D,50:164578,100:4B267B&animation=twinkling" />
 
 </div>
-
----
-
-## 📫 Connect With Me
-
-<p>
-  <a href="mailto:shakilmahmud212121@gmail.com">
-    <img src="https://img.shields.io/badge/Email-shakilmahmud212121%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
-
-<p>
-  <a href="https://www.linkedin.com/in/shakil-mahmud212/">
-    <img src="https://img.shields.io/badge/LinkedIn-Shakil_Mahmud-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-</p>
-
-<p>
-  <a href="https://github.com/shakil212">
-    <img src="https://img.shields.io/badge/GitHub-shakil212-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
-
-<p>
-  <a href="https://www.facebook.com/shakilmahmud.212">
-    <img src="https://img.shields.io/badge/Facebook-Shakil_Mahmud-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" />
-  </a>
-</p>
-
-<p>
-  <a href="https://www.instagram.com/shakil_735/">
-    <img src="https://img.shields.io/badge/Instagram-shakil__735-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-</p>
-
----
-
-## ♟️ Beyond Technology
-
-I enjoy solving complex algorithmic problems and playing chess in my free time. These activities strengthen my logical thinking, strategic decision-making, patience, and problem-solving abilities.
-
----
-
-<div align="center">
-
-### “Building intelligent and impactful technology through continuous learning, research, and collaboration.”
-
-</div>
-
-<!--
-The shakil212/shakil212 repository is a special GitHub repository.
-Its README.md file appears directly on the GitHub profile.
--->
