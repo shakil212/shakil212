@@ -1,31 +1,32 @@
-
-<!-- SHAKIL MAHMUD — ULTRA PREMIUM V3 / AURORA EDITION -->
+<!-- SHAKIL MAHMUD — V4 / AURORA CAREER EDITION -->
 
 <div align="center">
 
 <!-- CINEMATIC ANIMATED HERO -->
 
-<img width="100%" alt="Shakil Mahmud — AI Research and Software Engineering" src="https://capsule-render.vercel.app/api?type=venom&height=300&color=0:050B1D,28:102B54,65:134A7C,100:4E267B&text=SHAKIL%20MAHMUD&fontColor=F4FBFF&fontSize=60&fontAlignY=43&stroke=5DEDF6&strokeWidth=1&desc=AI%20RESEARCH%20%7C%20SOFTWARE%20ENGINEERING%20%7C%20INTELLIGENT%20SYSTEMS&descSize=15&descAlignY=73&animation=twinkling" />
+<img width="100%" alt="Shakil Mahmud — Technology, Business and Innovation" src="https://capsule-render.vercel.app/api?type=venom&height=300&color=0:050B1D,28:102B54,65:134A7C,100:4E267B&text=SHAKIL%20MAHMUD&fontColor=F4FBFF&fontSize=60&fontAlignY=43&stroke=5DEDF6&strokeWidth=1&desc=TECHNOLOGY%20%7C%20BUSINESS%20%7C%20INNOVATION&descSize=15&descAlignY=73&animation=twinkling" />
 
 <a href="https://github.com/shakil212">
-<img alt="Animated professional introduction" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3100&pause=1050&color=60E7FF&center=true&vCenter=true&width=780&height=64&lines=AI+%26+Machine+Learning+Research;Full-Stack+Software+Engineering;Self-Supervised+Learning+%26+IoT+Security;Sustainable+Bangla+NLP;Turning+Research+Into+Useful+Software" />
+<img alt="Animated professional introduction" src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3100&pause=1050&color=60E7FF&center=true&vCenter=true&width=780&height=64&lines=Software+Development+%26+AI%2FML;Data+Analysis+%26+MIS+Reporting;UI%2FUX+%26+Digital+Innovation;Business+Operations+%26+Automation;Building+Solutions.+Solving+Problems." />
 </a>
 
-**Computer Science Undergraduate · AI/ML Researcher · Software Developer**
+**Computer Science & Engineering Undergraduate · Technology · Business · Research**
 
-*Curiosity in research. Precision in engineering. Integrity in evaluation.*
+*Building Digital Solutions. Solving Real-World Problems.*
+
+**Open to internships and entry-level opportunities**
 
 <p>
 <a href="https://github.com/shakil212"><img alt="GitHub" src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/shakil-mahmud212/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-1265A8?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://shakilmahmud-portfolio.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="https://shakil-mahmud.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="mailto:shakilmahmud212121@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-087F96?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 ![Location](https://img.shields.io/badge/BASED%20IN-DHAKA%2C%20BANGLADESH-183252?style=flat-square&labelColor=0C1429)
 ![University](https://img.shields.io/badge/EDUCATION-UNITED%20INTERNATIONAL%20UNIVERSITY-302A67?style=flat-square&labelColor=0C1429)
 
-**[ABOUT](#-the-person-behind-the-projects) · [RESEARCH](#-research-laboratory) · [PROJECTS](#-selected-projects) · [SKILLS](#-technical-universe) · [ACTIVITY](#-github-activity) · [CONTACT](#-lets-connect)**
+**[ABOUT](#-the-person-behind-the-projects) · [CAREER FOCUS](#-career-focus) · [PROJECTS](#-selected-projects) · [RESEARCH](#-research-laboratory) · [SKILLS](#-technical-universe) · [EDUCATION](#-education--recognition) · [CONTACT](#-lets-connect)**
 
 </div>
 
@@ -33,21 +34,152 @@
 
 ## ✦ The Person Behind the Projects
 
-I'm **Shakil Mahmud**, a **BSc Computer Science undergraduate at United International University**, focused on building intelligent software and studying how machine learning systems behave beyond ideal benchmark settings.
+I'm **Shakil Mahmud**, a **BSc Computer Science and Engineering undergraduate at United International University (UIU)** in Dhaka, Bangladesh.
 
-My work spans **self-supervised IoT security**, **Bangla language technology**, **full-stack applications**, and **research-oriented interfaces**.
+My academic and project experience spans software development, AI/ML, data analysis, UI/UX, Python automation, research, documentation, and business process design. I combine technical knowledge with analytical thinking, communication and organized problem-solving to support both technical and corporate environments.
 
-I value systems that are not only visually compelling, but also technically sound, transparent about their limitations, and useful in practice.
-
-| 🔭 Now Exploring | 🛠️ Now Building | 🌱 Long-Term Direction |
+| Currently exploring | Project experience | Professional strengths |
 |:---|:---|:---|
-| Temporal SSL, robust evaluation, sustainable NLP | CareerPath AI, IoT research UI, developer tools | Adaptive, efficient, human-centered intelligent systems |
+| AI research, QA, data reporting and corporate workflows | Full-stack MVPs, research interfaces, automation and system design | Teamwork, communication, adaptability and attention to detail |
 
 <div align="center">
 
 **RESEARCH** ✦ **BUILD** ✦ **MEASURE** ✦ **IMPROVE**
 
 </div>
+
+---
+
+## ✦ Career Focus
+
+| Career pathway | Relevant background |
+|:---|:---|
+| **Software & Technology** | Software development, frontend/backend, QA, IT support and technical operations |
+| **AI & Data** | AI/ML fundamentals, SQL, Excel, data analysis, MIS reporting, automation |
+| **Design & Digital** | Figma, UI/UX, visual presentation, audience research and digital content |
+| **Business & Corporate** | Office productivity, administration, operations, project support, management-trainee interests |
+| **People & Customer-Focused Roles** | Communication, user research, customer relations, HR/recruitment and sales-support interests |
+| **Research & Innovation** | Academic research, experimental documentation, IoT and human-centered systems |
+
+These are entry-level career pathways and learning interests, not claims of professional employment in every field.
+
+[**Explore my career pathways, skills and coursework →**](https://shakil-mahmud.vercel.app/)
+
+---
+
+## ✦ Professional Experience
+
+**CodeAlpha — Artificial Intelligence & Machine Learning Intern**  
+January 2026 – March 2026 · Completed a three-month AI/ML internship.
+
+---
+
+## ✦ Selected Projects
+
+<div align="center">
+
+<img width="100%" alt="Selected Projects" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:12406C,100:49246A&text=SELECTED%20PROJECTS&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
+
+**From Research Prototypes to Useful Software**
+
+</div>
+
+### ◆ Interactive V3 — Professional Portfolio
+
+A multidisciplinary Next.js portfolio with **six career pathways, 14 searchable skill categories, 15 academic courses, 11 project case studies and six research notes**. Includes Quick Find, career and project filters, cinematic scrolling, custom cursor, responsive design and motion preferences.
+
+`Next.js` `TypeScript` `Tailwind CSS` `Motion` `GSAP` `Lucide React` `Vercel`
+
+**Status:** Production deployment completed; final public-release accessibility review is ongoing.
+
+[**Visit the new portfolio →**](https://shakil-mahmud.vercel.app/) · [Source repository (private)](https://github.com/shakil212/shakil-portfolio)
+
+---
+
+### ◆ CareerPath AI
+
+**AI-Powered Career Guidance and Job-Readiness Platform**
+
+A full-stack application featuring career-planning guidance, skill-gap analysis, resource recommendations, academic advice, and an integrated resume-building experience.
+
+**Technology stack**
+
+`Django` `Django REST Framework` `Next.js` `TypeScript` `PostgreSQL` `Tailwind CSS` `shadcn/ui` `JWT`
+
+**Status:** Integrated MVP. Further hardening and deployment work are ongoing. Some job-management features remain planned.
+
+[**Explore CareerPath AI →**](https://github.com/shakil212/careerpath-ai)
+
+*Repository access may require authorization.*
+
+---
+
+### ◆ MOT-SSL-GRU Cinematic Research UI
+
+**Research Interface for Temporal IoT Intrusion-Detection Experiments**
+
+A Streamlit demonstrator focused on research context, file inspection, submission workflows, provenance, and a cinematic dark UI.
+
+**Technology stack**
+
+`Python` `Streamlit` `CSS` `pytest` `Research UI/UX`
+
+**Status:** UI demonstration. **Real-time prediction is disabled** because the trained model is not connected.
+
+[**Explore the Cinematic Dashboard →**](https://github.com/shakil212/MOT-SSL-GRU-ZeroDay-IoT-Cinematic-UI)
+
+---
+
+### ◆ PHARVO — Smart Pharmacy Platform
+
+An academic healthcare software-system design covering:
+
+- Medicine inventory management
+- Prescription workflows
+- Point-of-sale operations
+- Procurement and stock control
+- Access control
+- Reporting and analytics
+
+**Skills:** `Requirements Engineering` `Software Architecture` `Workflow Modeling`
+
+**Status:** Academic system design. Production operation is not claimed.
+
+---
+
+### ◆ Project Savior — Hazard-Mapping Rescue Rover
+
+An AI/IoT-oriented rover development project using **Raspberry Pi** and **Arduino Mega**.
+
+**Intended capabilities:**
+
+- Hazard and environmental sensing
+- Thermal human-presence detection
+- Distress-sound recognition
+- Obstacle awareness
+- Rescue communication support
+
+**Skills:** `Raspberry Pi` `Arduino Mega` `Sensors` `Embedded Systems`
+
+**Status:** Development-oriented work. Field validation is not claimed.
+
+---
+
+<details>
+<summary><b>✧ More Engineering, Academic & Creative Projects</b></summary>
+
+| Project | Scope |
+|:---|:---|
+| **Personal Automation System** | Python-based bilingual productivity and workflow automation |
+| **Corporate Training & Skill Evaluation** | Academic employee-training and assessment system design |
+| **iNotify** | Java OOP notification application presented at UIU CSE Project Show |
+| **Digital Wheelchair** | Academic project presented at UIU CSE Project Show |
+| **[Earlier Personal Portfolio](https://github.com/shakil212/my-portfolio)** | Earlier React, TypeScript, Vite and Tailwind CSS portfolio |
+| **YouTube Video App** | React, Axios and YouTube Data API learning project |
+| **[Eid Salami](https://github.com/shakil212/eid-salami)** | Interactive web-based Eid experience |
+| **[ZeroDay IoT ML](https://github.com/shakil212/ZeroDay-IoT-ML-Project)** | Related notebook work in IoT security research |
+
+</details>
 
 ---
 
@@ -71,7 +203,7 @@ I value systems that are not only visually compelling, but also technically soun
 
 An audited study of **contrastive representation learning**, **temporal-order supervision**, and **GRU encoders** for family-holdout IoT attack detection.
 
-The evaluation uses CICIoT2023-derived experiments and compares **nine models**, including classical, supervised, and self-supervised baselines.
+The manuscript reports CICIoT2023-derived experiments comparing **nine models**, including classical, supervised, and self-supervised baselines. The figures below are reported manuscript results, not an independent replication.
 
 | Primary Comparison | Proposed Model Result |
 |:---|---:|
@@ -166,103 +298,23 @@ A **proposed framework** connecting evolving estimates of learner mastery with L
 
 **Stage:** Conceptual research framework. Learning-outcome improvements are not yet experimentally validated.
 
-> **Research Integrity:** These entries distinguish an audited university manuscript, an evidence-bounded draft, and proposed research directions. None is presented as an accepted or published paper.
+### 05 / Prompted, Not Taught — Generative AI in Education
+
+Completed team university HCI report on generative AI use in Bangladeshi school and college education. The report documents **22 interviews (18 students and four teachers)** and proposes staged hints, comprehension checks, verification prompts and bilingual support.
+
+**Stage:** Completed academic team report; not published.
 
 ---
 
-## ✦ Selected Projects
+### 06 / FGAP — Feature-Gated Adaptive Probing
 
-<div align="center">
+Conceptual final-year design for confidence-gated LLM routing, combining linguistic features with selective large-language-model routing.
 
-<img width="100%" alt="Selected Projects" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:12406C,100:49246A&text=SELECTED%20PROJECTS&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
-
-**From Research Prototypes to Useful Software**
-
-</div>
-
-### ◆ CareerPath AI
-
-**AI-Powered Career Guidance and Job-Readiness Platform**
-
-A full-stack application featuring career-planning guidance, skill-gap analysis, resource recommendations, academic advice, and an integrated resume-building experience.
-
-**Technology stack**
-
-`Django` `Django REST Framework` `Next.js` `TypeScript` `PostgreSQL` `Tailwind CSS` `shadcn/ui` `JWT`
-
-**Status:** Integrated MVP. Further hardening and deployment work are ongoing. Some job-management features remain planned.
-
-[**Explore CareerPath AI →**](https://github.com/shakil212/careerpath-ai)
-
-*Repository access may require authorization.*
+**Stage:** Conceptual design; experimental performance has not been validated.
 
 ---
 
-### ◆ MOT-SSL-GRU Cinematic Research UI
-
-**Research Interface for Temporal IoT Intrusion-Detection Experiments**
-
-A Streamlit demonstrator focused on research context, file inspection, submission workflows, provenance, and a cinematic dark UI.
-
-**Technology stack**
-
-`Python` `Streamlit` `CSS` `pytest` `Research UI/UX`
-
-**Status:** UI demonstration. **Real-time prediction is disabled** because the trained model is not connected.
-
-[**Explore the Cinematic Dashboard →**](https://github.com/shakil212/MOT-SSL-GRU-ZeroDay-IoT-Cinematic-UI)
-
----
-
-### ◆ PHARVO — Smart Pharmacy Platform
-
-An academic healthcare software-system design covering:
-
-- Medicine inventory management
-- Prescription workflows
-- Point-of-sale operations
-- Procurement and stock control
-- Access control
-- Reporting and analytics
-
-**Skills:** `Requirements Engineering` `Software Architecture` `Workflow Modeling`
-
-**Status:** Academic system design. Production operation is not claimed.
-
----
-
-### ◆ Project Savior — Hazard-Mapping Rescue Rover
-
-An AI/IoT-oriented rover development project using **Raspberry Pi** and **Arduino Mega**.
-
-**Intended capabilities:**
-
-- Hazard and environmental sensing
-- Thermal human-presence detection
-- Distress-sound recognition
-- Obstacle awareness
-- Rescue communication support
-
-**Skills:** `Raspberry Pi` `Arduino Mega` `Sensors` `Embedded Systems`
-
-**Status:** Development-oriented work. Field validation is not claimed.
-
----
-
-<details>
-<summary><b>✧ More Engineering, Academic & Creative Projects</b></summary>
-
-| Project | Scope |
-|:---|:---|
-| **Personal Automation System** | Python-based bilingual productivity and workflow automation |
-| **Corporate Training & Skill Evaluation** | Academic employee-training and assessment system design |
-| **iNotify** | Java OOP notification application presented at UIU CSE Project Show |
-| **Digital Wheelchair** | Academic project presented at UIU CSE Project Show |
-| **[Personal Portfolio](https://github.com/shakil212/my-portfolio)** | React, TypeScript, Vite and Tailwind CSS portfolio |
-| **[Eid Salami](https://github.com/shakil212/eid-salami)** | Interactive web-based Eid experience |
-| **[ZeroDay IoT ML](https://github.com/shakil212/ZeroDay-IoT-ML-Project)** | Related notebook work in IoT security research |
-
-</details>
+> **Research Integrity:** These entries distinguish completed university work, an evidence-bounded draft, a conceptual design, and proposed research directions. None is presented as an accepted or published paper.
 
 ---
 
@@ -278,18 +330,48 @@ An AI/IoT-oriented rover development project using **Raspberry Pi** and **Arduin
 
 | Field | Skills & Tools |
 |:---|:---|
-| **Programming Languages** | Python · Java · JavaScript · TypeScript |
+| **Programming Languages** | Python · Java · JavaScript · TypeScript · SQL · OOP |
 | **Frontend Development** | React · Next.js · HTML · CSS · Tailwind CSS · Vite · shadcn/ui |
 | **Backend Development** | Django · Django REST Framework · REST APIs |
-| **Databases & Authentication** | PostgreSQL · Database Design · JWT |
-| **AI/ML Research** | Neural Networks · GRU · Self-Supervised Learning · Classification |
+| **Databases & Authentication** | PostgreSQL · DBMS fundamentals · Database Design · JWT |
+| **AI/ML Research** | ML fundamentals · Neural network concepts · GRU · Self-Supervised Learning · Classification |
 | **Research Methods** | Family-Holdout Evaluation · Statistical Testing · Sensitivity Analysis |
 | **Scientific Tools** | Google Colab · Jupyter · LaTeX · Overleaf |
-| **Software Engineering** | Git · GitHub · VS Code · Streamlit · pytest |
-| **UI/UX** | Human-Computer Interaction · Interface Design · Prototyping |
-| **Embedded Systems** | Raspberry Pi · Arduino · IoT System Design |
+| **Software Engineering** | Git · GitHub · VS Code · Streamlit · debugging · basic pytest UI checks · interface verification |
+| **UI/UX** | Figma · Figma Make · Wireframing · Interactive Prototyping · Responsive UI · Accessibility basics · Human-Computer Interaction |
+| **Embedded Systems** | Raspberry Pi · Arduino Mega · IoT System Design concepts (academic exposure) |
+
+**Additional academic exposure:** C · C++ · Node.js · WordPress
 
 **Exploring further:** `Large Language Models` · `Generative AI` · `Continual Learning` · `Deep Knowledge Tracing` · `Sustainable NLP` · `Computer Vision` · `Human-Centered AI`
+
+---
+
+## ✦ Business, Data & Professional Competencies
+
+| Area | Skills and practical foundations |
+|:---|:---|
+| **Data, MIS & reporting** | Excel data entry, formulas and charts · SQL · Data Analysis · Data Management · structured reports · experiment comparison |
+| **Office & administration** | Microsoft Office · Microsoft 365 · Word · PowerPoint · document formatting · record organization · presentation preparation |
+| **Business operations** | Workflow design · process analysis · requirements gathering/documentation · information management · task coordination · project coordination concepts |
+| **Digital content** | Audience/user research · content ideation · visual presentation · AI-assisted research and ideation |
+| **QA & technical support** | Debugging · basic pytest UI checks · application workflow verification · technical documentation · structured problem analysis |
+| **Research & communication** | Research summaries · academic writing · user interviews · technical writing · reporting |
+| **Professional strengths** | Teamwork · written and verbal communication · adaptability · analytical thinking · problem-solving · attention to detail · organized follow-up |
+| **Languages** | Bangla (native) · English (working proficiency) |
+
+<details>
+<summary><b>Currently learning & exploring</b></summary>
+
+- Recruitment: CV screening, sourcing, shortlisting, interview scheduling, applicant trackers and candidate communication.
+- Digital marketing: social media marketing, content calendars, brand messaging, campaign monitoring and web analytics.
+- Software QA: manual test cases, regression testing, issue reporting and API testing.
+- Customer and sales support: inquiry handling, lead follow-up and sales coordination.
+- IT support: help-desk and infrastructure support processes.
+
+These are learning interests, not established professional expertise.
+
+</details>
 
 ---
 
@@ -297,15 +379,32 @@ An AI/IoT-oriented rover development project using **Raspberry Pi** and **Arduin
 
 **United International University** · Dhaka, Bangladesh
 
-**Bachelor of Science in Computer Science**
+**Bachelor of Science (BSc) in Computer Science and Engineering**
 
-Undergraduate · Expected graduation: May 2027
+Undergraduate · June 2022 – May 2027 (expected)
+
+<details>
+<summary><b>Academic Coursework — 15 courses</b></summary>
+
+| Subject area | Courses |
+|:---|:---|
+| Programming & computing | Structured Programming Language · Data Structure and Algorithms · Object-Oriented Programming |
+| AI & data science | Artificial Intelligence · Machine Learning · Data Mining · Digital Image Processing |
+| Software & design | Software Engineering · Human-Computer Interaction · System Analysis and Design |
+| Database, systems & networking | Database Management System · Operating System · Computer Security · Computer Network |
+| Management | Project Management |
+
+Coursework includes ongoing study; individual completion status is not asserted.
+
+</details>
 
 | Recognition | Detail |
 |:---|:---|
 | 🥈 **1st Runner-up** | Object-Oriented Programming Contest |
 | 🥈 **1st Runner-up** | Electronics Lab Contest |
-| 🎓 **Google AI Agents Intensive** | Completed the 5-Day Course |
+| 🎓 **Introduction to Generative AI** | Google · April 2026 |
+| 🎓 **Introduction to Large Language Models** | Google · April 2026 |
+| 🎓 **5-Day AI Agents Intensive Course with Google** | Kaggle / Google · December 2025 |
 | 🛠️ **UIU CSE Project Show** | Presented iNotify and Digital Wheelchair |
 
 ---
@@ -338,14 +437,17 @@ Undergraduate · Expected graduation: May 2027
 
 <img width="100%" alt="Let's Connect" src="https://capsule-render.vercel.app/api?type=rect&height=86&color=0:09152A,55:12406B,100:49226F&text=LET%27S%20CONNECT&fontColor=75ECFF&fontSize=29&fontAlignY=53&animation=fadeIn" />
 
-**Open to Research Collaboration, Internships, Graduate Research & Software Engineering Opportunities**
+**Open to Internships, Entry-Level Technical and Corporate Opportunities & Research Collaboration**
 
-Let's talk about robust ML, sustainable AI, research tools, educational technology, or building useful software.
+Let's connect about technology, data, design, business operations, research or useful digital solutions.
 
 <p>
 <a href="mailto:shakilmahmud212121@gmail.com"><img alt="Email" src="https://img.shields.io/badge/EMAIL-CONTACT%20ME-087F96?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/shakil-mahmud212/"><img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-CONNECT-1265A8?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://shakilmahmud-portfolio.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-EXPLORE-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="https://shakil-mahmud.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/PORTFOLIO-EXPLORE-6544B4?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="https://www.instagram.com/shakil__735/"><img alt="Instagram" src="https://img.shields.io/badge/INSTAGRAM-C13584?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+<a href="https://www.facebook.com/shakilmahmud2121"><img alt="Facebook" src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
+<a href="https://www.youtube.com/@LifeBytesWithShakil"><img alt="YouTube" src="https://img.shields.io/badge/YOUTUBE-B91C1C?style=for-the-badge&logo=youtube&logoColor=white" /></a>
 </p>
 
 ### ASK BETTER QUESTIONS · BUILD USEFUL SYSTEMS · REPORT THE EVIDENCE
